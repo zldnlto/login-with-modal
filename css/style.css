@@ -128,7 +128,7 @@ textarea:focus::-webkit-input-placeholder {
 .icon-close {
   width: 16px;
   height: 16px;
-  background: url("./assets/close.png") no-repeat center/cover;
+  background: url("../assets/close.png") no-repeat center/cover;
 }
 
 .login-menu {
@@ -184,11 +184,11 @@ textarea:focus::-webkit-input-placeholder {
   margin-right: 8px;
   width: 22px;
   height: 22px;
-  background: url("./assets/icon_check_empty.png");
+  background: url("../assets/icon_check_empty.png");
 }
 
 #login-keep:checked + .login-keep-txt::before {
-  background-image: url("./assets/icon_check.png");
+  background-image: url("../assets/icon_check.png");
 }
 
 .user-menu {
