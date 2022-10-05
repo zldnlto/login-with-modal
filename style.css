@@ -1,3 +1,5 @@
+@import url(./status.css);
+
 /* reset */
 
 button {
@@ -22,7 +24,8 @@ a {
   color: inherit;
 }
 
-input:focus:-ms-input-placeholder {
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -31,10 +34,6 @@ input:focus:-ms-input-placeholder {
   box-sizing: border-box;
   font-size: inherit;
   font-weight: inherit;
-}
-
-.hidden {
-  display: none;
 }
 
 .ir {
@@ -151,8 +150,14 @@ input:focus:-ms-input-placeholder {
   padding: 17px 16px;
   border: 1px solid #767676;
   border-radius: 5px;
-  color: #767676;
+  color: #000;
 }
+
+.input-box:focus {
+}
+/* .input-box[placeholder] {
+  color: #767676;
+} */
 
 .input-id {
   margin-top: 26px;

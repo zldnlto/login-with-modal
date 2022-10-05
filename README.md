@@ -6,11 +6,13 @@ input checkbox 레티나 적용가능하게 해보자
 
 🐛 모달창 header 하단 border 1px 뜨는데 왜그럴까?
 
-`a`태그의 가상요소 '|' 도 페이지 이동 기능을 하기에
+`a`태그의 가상요소 '|' 도 페이지 이동 기능을 하고 있기에
 
 ```
   pointer-events: none;
   cursor: default;
 ```
 
-로 비활성화 해보려 했는데 안된다. 방법없을까
+로 비활성화 해보려 했는데 안된다. 방법 없을까
+
+- `input` placehloder가 일회성인 문제

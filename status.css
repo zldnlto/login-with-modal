@@ -1,0 +1,9 @@
+/* 로그인 실패 */
+
+.login-menu .empty {
+  border: 2px solid #f4492e;
+}
+
+.hidden {
+  display: none;
+}
