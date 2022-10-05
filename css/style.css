@@ -257,14 +257,15 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .item-box.google::before {
-  background: url("./assets/Google__G__Logo\ 1.png") no-repeat 50% 50% / contain;
+  background: url("../assets/Google__G__Logo\ 1.png") no-repeat 50% 50% /
+    contain;
 }
 
 .item-box.facebook {
   border: 1px solid #2d9cdb;
 }
 .item-box.facebook::before {
-  background: url("./assets/facebook.png") no-repeat 50% 50% / contain;
+  background: url("../assets/facebook.png") no-repeat 50% 50% / contain;
 }
 
 .item-box.naver {
@@ -272,12 +273,12 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .item-box.naver::before {
-  background: url("./assets/naver-logo.png") no-repeat 50% 50% / contain;
+  background: url("../assets/naver-logo.png") no-repeat 50% 50% / contain;
 }
 
 .item-box.kakao {
   border: 1px solid #f2c94c;
 }
 .item-box.kakao::before {
-  background: url("./assets/message-circle.png") no-repeat 50% 50% / contain;
+  background: url("../assets/message-circle.png") no-repeat 50% 50% / contain;
 }
