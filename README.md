@@ -5,3 +5,12 @@ input checkbox 레티나 적용가능하게 해보자
 => 일단 헤더 유지해보려고 h2는 ir처리, p태그를 따로 작성한 후 aria hidden을 써보았다.. 마크업이 1g 복잡해지는 기분을 지울 수 없음!
 
 🐛 모달창 header 하단 border 1px 뜨는데 왜그럴까?
+
+`a`태그의 가상요소 '|' 도 페이지 이동 기능을 하기에
+
+```
+  pointer-events: none;
+  cursor: default;
+```
+
+로 비활성화 해보려 했는데 안된다. 방법없을까

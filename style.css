@@ -2,6 +2,7 @@
 
 button {
   all: unset;
+  cursor: pointer;
 }
 
 p,
@@ -19,6 +20,10 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
 * {
@@ -83,16 +88,20 @@ a {
   margin-top: 1.875em;
 }
 
-.btn-login {
+/* common */
+.item-box {
+  display: block;
   width: 100%;
+  padding: 20px 0 18px 0;
+  border-radius: 5px;
+}
+
+.btn-login {
   margin-top: 2rem;
   background-color: #2f80ed;
-  border-radius: 5px;
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  padding: 20px 0 18px 0;
-  cursor: pointer;
   text-align: center;
 }
 
@@ -125,6 +134,12 @@ a {
 
 .login-menu {
   padding: 24px;
+  color: #767676;
+}
+
+.login-menu .loginform-txt {
+  font-size: 20px;
+  color: #000;
 }
 
 #login {
@@ -150,6 +165,7 @@ a {
 .login-keep__wrapper {
   margin-top: 16px;
   user-select: none;
+  text-align: left;
 }
 
 .login-keep-txt {
@@ -159,8 +175,8 @@ a {
 .login-keep-txt::before {
   display: inline-block;
   content: "";
-  vertical-align: -4px;
-  margin-right: 4px;
+  vertical-align: -5px;
+  margin-right: 8px;
   width: 22px;
   height: 22px;
   background: url("./assets/icon_check_empty.png");
@@ -168,4 +184,95 @@ a {
 
 #login-keep:checked + .login-keep-txt::before {
   background-image: url("./assets/icon_check.png");
+}
+
+.user-menu {
+  margin-top: 24px;
+}
+
+.user-menu .join::after {
+  content: "|";
+  margin: 0 12px;
+}
+
+.hr {
+  display: flex;
+  margin-top: 34px;
+  align-items: center;
+  word-break: keep-all;
+}
+
+.hr::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #c4c4c4;
+  margin-right: 13px;
+}
+
+.hr::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #c4c4c4;
+  margin-left: 13px;
+}
+
+.sns-login {
+  margin-top: 20px;
+}
+
+.sns-lists {
+  font-weight: 500;
+  color: inherit;
+}
+
+.sns-lists li + li {
+  margin-top: 10px;
+}
+
+.sns-lists .item-box {
+  position: relative;
+}
+
+.item-box.google {
+  border: 1px solid #767676;
+}
+.sns-lists .item-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+
+  /* vertical-align: -8px; */
+}
+
+.item-box.google::before {
+  background: url("./assets/Google__G__Logo\ 1.png") no-repeat 50% 50% / contain;
+}
+
+.item-box.facebook {
+  border: 1px solid #2d9cdb;
+}
+.item-box.facebook::before {
+  background: url("./assets/facebook.png") no-repeat 50% 50% / contain;
+}
+
+.item-box.naver {
+  border: 1px solid #00bf18;
+}
+
+.item-box.naver::before {
+  background: url("./assets/naver-logo.png") no-repeat 50% 50% / contain;
+}
+
+.item-box.kakao {
+  border: 1px solid #f2c94c;
+}
+.item-box.kakao::before {
+  background: url("./assets/message-circle.png") no-repeat 50% 50% / contain;
 }
