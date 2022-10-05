@@ -1,0 +1,171 @@
+/* reset */
+
+button {
+  all: unset;
+}
+
+p,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  line-height: 1;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.ir {
+  position: absolute;
+  clip-path: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+/* FLOAT CLEARFIX*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.float--left {
+  float: left;
+}
+
+.float--right {
+  float: right;
+}
+
+/* style */
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.greeting {
+  min-width: 500px;
+  padding: 1.875rem; /* 30px */
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.logo {
+  width: 138px;
+  height: 40px;
+}
+
+.txt-login {
+  margin-top: 1.875em;
+}
+
+.btn-login {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #2f80ed;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px 0 18px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* 모달 */
+
+.modal-login {
+  width: 520px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.header-modal {
+  position: relative;
+  padding: 21px 24px;
+  border-bottom: 1px solid #c4c4c4;
+}
+/* 옆에 1px 뜨는거왜그럴까 */
+
+.header-modal p {
+  display: inline-block;
+}
+
+.icon-close {
+  width: 16px;
+  height: 16px;
+  background: url("./assets/close.png") no-repeat center/cover;
+}
+
+.login-menu {
+  padding: 24px;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  padding: 17px 16px;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  color: #767676;
+}
+
+.input-id {
+  margin-top: 26px;
+}
+
+.input-pw {
+  margin-top: 10px;
+}
+
+.login-keep__wrapper {
+  margin-top: 16px;
+  user-select: none;
+}
+
+.login-keep-txt {
+  cursor: pointer;
+}
+
+.login-keep-txt::before {
+  display: inline-block;
+  content: "";
+  vertical-align: -4px;
+  margin-right: 4px;
+  width: 22px;
+  height: 22px;
+  background: url("./assets/icon_check_empty.png");
+}
+
+#login-keep:checked + .login-keep-txt::before {
+  background-image: url("./assets/icon_check.png");
+}
