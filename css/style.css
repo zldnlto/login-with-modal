@@ -1,4 +1,5 @@
 @import url(./status.css);
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 
 /* reset */
 
@@ -24,12 +25,8 @@ a {
   color: inherit;
 }
 
-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
 * {
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
   line-height: 1;
   box-sizing: border-box;
   font-size: inherit;
@@ -62,6 +59,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 /* style */
+
 .wrapper {
   position: absolute;
   left: 50%;
@@ -88,12 +86,6 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 /* common */
-.item-box {
-  display: block;
-  width: 100%;
-  padding: 20px 0 18px 0;
-  border-radius: 5px;
-}
 
 .btn-login {
   margin-top: 2rem;
@@ -102,6 +94,10 @@ textarea:focus::-webkit-input-placeholder {
   font-weight: bold;
   color: #fff;
   text-align: center;
+  display: block;
+  width: 100%;
+  padding: 20px 0 18px 0;
+  border-radius: 5px;
 }
 
 /* 모달 */
@@ -123,12 +119,13 @@ textarea:focus::-webkit-input-placeholder {
 
 .header-modal p {
   display: inline-block;
+  font-weight: 500;
 }
 
 .icon-close {
   width: 16px;
   height: 16px;
-  background: url("../assets/close.png") no-repeat center/cover;
+  background: url("../assets/close.png") no-repeat center / cover;
 }
 
 .login-menu {
@@ -138,6 +135,7 @@ textarea:focus::-webkit-input-placeholder {
 
 .login-menu .loginform-txt {
   font-size: 20px;
+  font-weight: 500;
   color: #000;
 }
 
@@ -152,12 +150,6 @@ textarea:focus::-webkit-input-placeholder {
   border-radius: 5px;
   color: #000;
 }
-
-.input-box:focus {
-}
-/* .input-box[placeholder] {
-  color: #767676;
-} */
 
 .input-id {
   margin-top: 26px;
@@ -189,6 +181,12 @@ textarea:focus::-webkit-input-placeholder {
 
 #login-keep:checked + .login-keep-txt::before {
   background-image: url("../assets/icon_check.png");
+}
+
+.item-box {
+  display: block;
+  padding: 16px 0;
+  border-radius: 5px;
 }
 
 .user-menu {
@@ -238,6 +236,7 @@ textarea:focus::-webkit-input-placeholder {
 
 .sns-lists .item-box {
   position: relative;
+  font-weight: 500;
 }
 
 .item-box.google {

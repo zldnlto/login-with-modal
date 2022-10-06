@@ -14,7 +14,7 @@
           <img src="./assets/weniv-logo.png" alt="위니브 로고" class="logo" />
         </h2>
         <p class="txt-login">위니브를 더 즐겁고 편리하게 이용하세요.</p>
-        <button class="item-box btn-login btn-greeting">로그인</button>
+        <button class="btn-login btn-greeting">로그인</button>
       </article>
       <section class="modal-login hidden">
         <h2 class="ir">로그인 또는 회원가입</h2>
@@ -31,15 +31,15 @@
               type="text"
               placeholder="아이디"
               maxlength="16"
-              onfocus="this.placeholder = ''"
               class="input-box input-id"
+              required
             />
             <input
               type="text"
               placeholder="비밀번호"
               maxlength="30"
-              onfocus="this.placeholder = ''"
               class="input-box input-pw"
+              required
             />
             <div class="login-keep__wrapper">
               <input type="checkbox" id="login-keep" class="ir" />
@@ -47,7 +47,6 @@
                 >로그인 상태 유지</label
               >
             </div>
-
             <button id="btn-login" class="item-box btn-login">로그인</button>
           </form>
           <div class="user-menu">

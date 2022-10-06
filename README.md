@@ -1,12 +1,11 @@
-input checkbox 레티나 적용가능하게 해보자
+https://zldnlto.github.io/login-with-modal/
 
-❓ 모달창에서 상단 영역을 헤더로 묶으면 깔끔할듯 싶은데 h2를 이용한 모달 전체 헤딩을 포기해야하는..? 상황 발생  
-아니 실제로 h2 헤딩 영역이 어떻게 되는거지? 에어비앤비 로그인 모달창 보니까 더 모르겠다.  
-=> 일단 헤더 유지해보려고 h2는 ir처리, p태그를 따로 작성한 후 aria hidden을 써보았다.. 마크업이 1g 복잡해지는 기분을 지울 수 없음!
+[] input checkbox 레티나 적용가능하게 해보자
 
-🐛 모달창 header 하단 border 1px 뜨는데 왜그럴까?
+- 🐛 모달창 header 하단 border 1px 뜨는데 왜그럴까?  
+  => line-height: 1때문인 것은 확인
 
-`a`태그의 가상요소 '|' 도 페이지 이동 기능을 하고 있기에
+- `a`태그의 가상요소 '|' 도 페이지 이동 기능을 하고 있기에
 
 ```
   pointer-events: none;
@@ -15,4 +14,5 @@ input checkbox 레티나 적용가능하게 해보자
 
 로 비활성화 해보려 했는데 안된다. 방법 없을까
 
-- `input` placehloder가 일회성인 문제
+- `input` placehloder가 일회성인 문제  
+  => `<span>`을 이용해서 따로 placeholder 역할을 하도록 하면 된다고 한다. 일단 현업에서 크게 신경쓰고 있는 부분은 아닌 것 같으므로 `placeholder:transparent`은 제거하였다.
